@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poetsen One";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/** BARRA DE NAVEGACION **/
+
+.container-header {
+  background-color: #d6eef2;
+  position: "fixed";
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.container-header header .Logo a {
+  font-family: "Poetsen One";
+  font-size: 36px;
+  color: #03363d;
+  text-decoration: none;
+}
+
+.container-header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.container-header header nav ul li a {
+  text-align: none;
+  color: #03363d;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.container-header header nav ul li a:hover {
+  color: #628186;
+}
+
+.nav-responsive {
+  background-color: #d6eef2;
+  color: #03363d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/** BANNER **/
+
+.Inicio {
+  background: linear-gradient(
+      to top,
+      rgba(214, 238, 242, 0.8),
+      rgba(209, 228, 231, 1)
+    ),
+    url(../Images/Fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #03363d;
+  display: flex;
+  align-items: center;
+}
+
+.Inicio .Banner {
+  padding: 20px;
+  background-color: #d6eef2;
+  max-width: 475px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.Inicio .Banner img {
+  margin-top: 40px;
+  border: 10px solid #d6eef2;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.Inicio .Banner h2 {
+  margin-top: 40px;
+  font-size: 35px;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.Inicio .Banner h4 {
+  font-weight: normal;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.Inicio .Banner .RedesSociales a {
+  color: #03363d;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #03363d;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+  -webkit-animation: slide-in-blurred-top 0.8s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: slide-in-blurred-top 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.Inicio .Banner .RedesSociales a:hover {
+  background-color: #c0cdcf;
+}
+
+/** SOBRE MI **/
+
+.SobreMi {
+  background-color: #d6eef2;
+  color: #03363d;
+  padding: 50px 10px;
+}
+
+.SobreMi .Contenido-SobreMi {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.SobreMi h2 {
+  font-size: 48px;
+  font-family: "Poetsen One";
+  text-align: center;
+  padding: 20px;
+}
+
+.AnimacionH2 {
+  opacity: 0;
+}
+
+.AnimacionH2.activa {
+  opacity: 1;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.AnimacionH3 {
+  opacity: 0;
+}
+
+.AnimacionH3.activa {
+  opacity: 1;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.AnimacionH32 {
+  opacity: 0;
+}
+
+.AnimacionH32.activa {
+  opacity: 1;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.SobreMi .Contenido-SobreMi p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.SobreMi .Contenido-SobreMi p span {
+  color: #42686e;
+  font-weight: bold;
+}
+
+.SobreMi .Fila {
+  display: flex;
+}
+
+.SobreMi .Fila .col {
+  width: 50%;
+}
+
+.SobreMi .Fila .col h3 {
+  font-size: 28px;
+  font-family: "Poetsen One";
+  margin-bottom: 25px;
+}
+
+.SobreMi .Fila .col ul {
+  list-style: none;
+}
+
+.SobreMi .Fila .col ul li {
+  margin: 12px;
+}
+
+.SobreMi .Fila .col ul li strong {
+  display: inline-block;
+  width: 130px;
+  color: #42686e;
+}
+
+.SobreMi .Fila .col .Contenido-Intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+.SobreMi .Fila .col .Contenido-Intereses .Interes {
+  width: 100px;
+  height: 100px;
+  background-color: #d6eef2;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: 0.3s;
+}
+
+.SobreMi .Fila .col .Contenido-Intereses .Interes:hover {
+  background-color: #174d4d;
+  color: #fff;
+}
+
+.SobreMi .Fila .col .Contenido-Intereses .Interes:i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.SobreMi button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #03363d;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #03363d;
+  position: relative;
+  z-index: 10;
+}
+
+.SobreMi button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c0cdcf;
+  z-index: -1;
+  transition: 1s;
+}
+
+.SobreMi button:hover .overlay {
+  width: 100%;
+}
+
+/** HABILIDADES **/
+
+.Habilidades {
+  background-color: #d6eef2;
+  color: #03363d;
+  padding: 25px 10px 50px;
+}
+
+.Habilidades .Contenido-Habilidades {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.Habilidades h2 {
+  font-size: 48px;
+  font-family: "Poetsen One";
+  text-align: center;
+  padding: 20px;
+}
+
+.Habilidades .Contenido-Habilidades p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Habilidades .Fila {
+  display: flex;
+}
+
+.Habilidades .Fila .col {
+  width: 25%;
+  padding-left: 5%;
+}
+
+.Habilidades .FilaDos {
+  display: flex;
+  margin-top: 7%;
+}
+
+.Habilidades .FilaDos .col {
+  width: 33%;
+}
+
+.Habilidades .Habilidad {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.Habilidades .Habilidad .outer {
+  display: flex;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid #c0cdcf;
+  padding: 19px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.Habilidades .Habilidad .inner {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 16px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#circleHTML {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animHTML 3s linear forwards;
+}
+
+#circleCSS {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animCSS 3s linear forwards;
+}
+
+#circlePHP {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animPHP 3s linear forwards;
+}
+
+#circleJS {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animJS 3s linear forwards;
+}
+
+#circleJava {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animJava 3s linear forwards;
+}
+
+#circleC {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animC 3s linear forwards;
+}
+
+#circlePython {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: animPython 3s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animHTML {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+
+@keyframes animCSS {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+
+@keyframes animPHP {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+
+@keyframes animJS {
+  100% {
+    stroke-dashoffset: 306.8;
+  }
+}
+
+@keyframes animJava {
+  100% {
+    stroke-dashoffset: 165.2;
+  }
+}
+
+@keyframes animC {
+  100% {
+    stroke-dashoffset: 424.8;
+  }
+}
+
+@keyframes animPython {
+  100% {
+    stroke-dashoffset: 424.8;
+  }
+}
+
+.Habilidades .FilaTres {
+  display: flex;
+  margin-top: 2%;
+}
+
+.Habilidades h3 {
+  font-size: 48px;
+  font-family: "Poetsen One";
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.slider {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(175px * 16);
+}
+
+.slider .slide {
+  width: 175px;
+  height: 75px;
+  align-content: space-around;
+  padding-left: 1%;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-175px * 8));
+    transform: translateX(calc(-175px * 8));
+  }
+}
+
+/** PROYECTOS **/
+
+.Proyectos {
+  background-color: #d6eef2;
+  color: #03363d;
+  padding: 25px 10px 50px;
+}
+
+.Proyectos .Contenido-Proyectos {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.Proyectos .Contenido-Proyectos h2 {
+  font-size: 48px;
+  font-family: "Poetsen One";
+  text-align: center;
+  padding: 20px;
+}
+
+.Proyectos .Contenido-Proyectos p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Proyectos .Contenido-Proyectos p strong {
+  width: 130px;
+  color: #42686e;
+}
+
+.Proyectos .Fila {
+  display: -webkit-inline-box;
+  padding-left: 2.5%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Proyectos .FilaImg {
+  width: 31%;
+  padding: 0 20px 0 20px;
+  transform: rotate(-5deg);
+}
+
+.Proyectos .FilaImg img {
+  width: 330px;
+  height: 330px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15%;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.Fila.activa {
+  opacity: 0;
+  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
